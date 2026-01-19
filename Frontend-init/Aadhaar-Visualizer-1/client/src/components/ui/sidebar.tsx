@@ -2,7 +2,15 @@
 
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
-import { cva, VariantProps } from "class-variance-authority"
+import { cva } from "class-variance-authority";
+
+/**
+ * Local fallback for VariantProps
+ * This avoids CVA export mismatch issues in Vite
+ */
+type VariantProps<T> = {
+  [K in keyof T]?: string | number | boolean;
+};
 import { PanelLeftIcon } from "lucide-react"
 
 import { useIsMobile } from "@/hooks/use-mobile"

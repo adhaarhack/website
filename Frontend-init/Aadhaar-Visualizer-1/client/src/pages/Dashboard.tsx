@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import { api, KpiStatsResponse, StateWiseStatsResponse, TrendsStatsResponse } from "@shared/routes";
+import { api } from "@shared/routes";
+import type { KpiStatsResponse, StateWiseStatsResponse, TrendsStatsResponse } from "@/types/routes";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
   Users, 
@@ -13,7 +14,8 @@ import { TopStatesChart, TrendChart, BreakdownChart } from "@/components/Dashboa
 import { Skeleton } from "@/components/ui/skeleton";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { translations, Language } from "@/lib/translations";
+import type { Language } from "@/lib/translations";
+import { translations } from "@/lib/translations";
 import { AppSidebar } from "@/components/app-sidebar";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 

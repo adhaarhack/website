@@ -5,7 +5,7 @@ import { Tooltip as UITooltip, TooltipContent, TooltipProvider, TooltipTrigger }
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 import { useState, useEffect } from "react";
-import { Language } from "@/lib/translations";
+import type { Language } from "@/lib/translations";
 
 const mockData = [
   { event: 'Birth', count: 1200 },

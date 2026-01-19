@@ -21,7 +21,7 @@ import {
   MapPinOff,
   Languages
 } from "lucide-react";
-import { Language } from "@/lib/translations";
+import type { Language } from "@/lib/translations";
 
 const navItems = [
   { href: "/", label: "Overview", icon: LayoutDashboard },

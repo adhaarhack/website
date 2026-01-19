@@ -3,9 +3,10 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, 
   LineChart, Line, Legend, AreaChart, Area, PieChart, Pie, Cell 
 } from "recharts";
-import { StateWiseStatsResponse, TrendsStatsResponse } from "@shared/routes";
 import { motion } from "framer-motion";
-import { Language, translations } from "@/lib/translations";
+import type { Language } from "@/lib/translations";
+import { translations } from "@/lib/translations";
+import type { StateWiseStatsResponse, TrendsStatsResponse } from "@/types/routes";
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8'];
 
